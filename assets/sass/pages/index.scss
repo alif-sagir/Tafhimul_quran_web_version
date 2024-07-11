@@ -1,0 +1,199 @@
+// banner_area start
+.banner_area {
+    border: $border;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+    margin-bottom: 50px;
+    .banner_area_contain {
+        border: $border;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 230px;
+    }
+}
+// banner_area end
+// search area start
+.search_area {
+    border: $border;
+    .search_area_content {
+        border: $border;
+        justify-content: center;
+        display: flex;
+        .form_area {
+            border: $border;
+            display: flex;
+            width: 524px;
+            background-color: $off_white;
+            padding: 2px 15px;
+            border-radius: 26px;
+            // drop_down_area start
+            .drop_down_area {
+                border: $border;
+                align-items: center;
+                display: flex;
+                .drop_down_botton {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    background-color: transparent;
+                    padding: 0px;
+                    width: 36px;
+                    height: 36px;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        border: $border;
+                        align-items: center;
+                        display: flex;
+                        font-size: 21px;
+                        color: #575757;
+                    }
+                }
+            }
+            // drop_down_area end
+            // search_title_and_search_icon_area start
+            .search_title_and_search_icon_area {
+                border: $border;
+                margin-left: 10px;
+                align-items: center;
+                display: flex;
+                width: 100%;
+
+                .input_area {
+                    border: $border;
+                    background-color: transparent;
+                    outline: 0;
+                    font-family: $bn;
+                    font-size: 20px;
+                    color: $black;
+                    flex: 1;
+                    margin-right: 10px;
+                }
+                .seaech_icon {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    width: 36px;
+                    height: 36px;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        border: $border;
+                        font-size: 20px;
+                        color: $black;
+                    }
+                }
+            }
+            // search_title_and_search_icon_area end
+        }
+    }
+}
+// search area end
+
+// table of contents start
+.table_of_contents_area {
+    border: $border;
+    margin-bottom: 100px;
+    .table_of_contents_area_content {
+        border: $border;
+        .table_of_contents {
+            border: $border;
+            justify-content: center;
+            display: flex;
+            .table_content {
+                border: $border;
+                width: 775px;
+                ul {
+                    border: $border;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px 15px;
+                    li {
+                        border: $border;
+
+                        .item {
+                            border: $border;
+                            width: 380px;
+                            background-color: $brand_color;
+                            border-radius: 5px; 
+                            transition-duration: .4s;
+                            &:hover{
+                                background-color: $dark_green;
+                            }
+                            .item_area {
+                                border: $border;
+                                display: flex;
+                                align-items: center;
+                                .item_name {
+                                    border: $border;
+                                    flex: 1;
+                                    margin-left: 20px;
+                                    .introduction_title {
+                                        padding: 17px 0px;
+                                    }
+                                    .item_name_title {
+                                        border: $border;
+                                        font-family: $bn;
+                                        font-size: 24px;
+                                        font-weight: 400px;
+                                        color: $white;
+                                    }
+                                }
+                                .place_and_ayet_area {
+                                    border: $border;
+                                    width: 110px;
+                                    background-color: $dark_green;
+                                    padding: 15px 15px;
+                                    margin-left: 10px;
+                                    border-radius: 5px;
+
+                                    .place_and_ayet_area_content {
+                                        border: $border;
+
+                                        .place {
+                                            border: $border;
+                                            .place_title_and_place {
+                                                border: $border;
+                                                font-family: $bn;
+                                                font-size: 14px;
+                                                font-weight: 400px;
+                                                color: $white;
+                                                .place_title {
+                                                    border: $border;
+                                                }
+                                                .place {
+                                                    border: $border;
+                                                }
+                                            }
+                                        }
+                                        .ayet_area {
+                                            border: $border;
+                                            .ayet_title_and_number_area {
+                                                border: $border;
+                                                font-family: $bn;
+                                                font-size: 14px;
+                                                font-weight: 400px;
+                                                color: $white;
+                                                .ayet_title {
+                                                    border: $border;
+                                                }
+                                                .ayet_number {
+                                                    border: $border;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// table of contents end

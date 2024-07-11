@@ -1,0 +1,296 @@
+// sura_name_area start
+.sura_name_area {
+    border: $border;
+    padding: 50px 0px;
+    .sura_name_area_content {
+        border: $border;
+        text-align: center;
+        justify-content: center;
+        display: grid;
+        .sura_name {
+            border: $border;
+            padding-bottom: 15px;
+
+            .sura_name_title {
+                border: $border;
+                font-size: 36px;
+                color: $black;
+                font-weight: 400;
+                font-family: $bn;
+                .title_text {
+                    border: $border;
+                }
+            }
+        }
+        .sura_type_ayet_ruku_area {
+            border: $border;
+            display: flex;
+            gap: 22px;
+            justify-content: center;
+
+            // &:last-child .type_ayet_ruku_text {
+            //     &::after {
+            //         width: 0px;
+            //     }
+            // }
+            .type_area {
+            }
+            .ayet_area {
+            }
+            .ruku_area {
+            }
+            .type_ayet_ruku_text {
+                border: $border;
+                font-size: 14px;
+                color: $black;
+                font-weight: 400;
+                font-family: $bn;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 2px;
+                    height: 20px;
+                    background-color: $black;
+                    position: absolute;
+                    margin: 0px 10px;
+                    margin-top: 0px;
+                    top: 0px;
+                }
+
+                &:last-child &::after {
+                    width: 0px;
+                }
+                .text {
+                    border: $border;
+                }
+            }
+        }
+    }
+}
+// sura_name_area end
+
+// sura_translation_and_ayet_area start
+.sura_and_translation_area {
+    border: $border;
+    .sura_and_translation_area_content {
+        border: $border;
+        border-radius: 10px;
+        background-color: $off_white;
+
+        // translation_and_ayet-title area start
+        .translation-title_ayet-title_and_site-menu {
+            border: $border;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 30px;
+            border-radius: 10px;
+            background-color: $dark_green;
+            .translation-title {
+            }
+            .translation_and_ayet-title {
+                border: $border;
+                .text {
+                    border: $border;
+                    font-family: $bn;
+                    font-size: 24px;
+                    font-weight: 400px;
+                    color: $white;
+                }
+            }
+            .site-menu {
+                border: $border;
+                align-items: center;
+                display: flex;
+                ul {
+                    border: $border;
+                    li {
+                        border: $border;
+                        align-items: center;
+                        display: flex;
+                        gap: 10px;
+                        a {
+                            border: $border;
+                            align-items: center;
+                            display: flex;
+                            width: 28px;
+                            height: 28px;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 3px;
+                            background-color: $off_white;
+                            img {
+                                border: $border;
+                            }
+                            .grip-lines-vertical {
+                                border: $border;
+                                width: 3px;
+                                height: 13px;
+                                background-color: $black;
+                            }
+                            .grip-lines-vertical_2 {
+                                background-color: $brand_color;
+                            }
+                            .grip-lines {
+                                border: $border;
+                                width: 14px;
+                                height: 3px;
+                                background-color: $black;
+                            }
+                            .grip-lines_2 {
+                                background-color: $brand_color;
+                            }
+                        }
+                        .grip-lines-vertical_a {
+                            display: inline-flex;
+                            gap: 2px;
+                        }
+                        .grip-lines_a {
+                            gap: 2px;
+                            display: inline-grid;
+                            padding: 9px;
+                        }
+                    }
+                }
+            }
+        }
+        // translation_and_ayet-title area end
+
+        // sura_and_translation area start
+        .sura_and_translation {
+            border: $border;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 30px;
+
+            // translation_area start
+            .translation_area {
+                border: $border;
+                flex: 1;
+                margin-right: 50px;
+                position: relative;
+                ul {
+                    border: $border;
+                    line-height: 50px;
+                    &::after {
+                        content: "";
+                        width: 2px;
+                        height: 100%;
+                        background-color: $black;
+                        position: absolute;
+                        top: 0px;
+                        right: -51px;
+                        border-radius: 5px;
+                    }
+                    li {
+                        border: $border;
+                        .translation_text {
+                            border: $border;
+                            font-family: $bn;
+                            font-weight: 400;
+                            font-size: 24px;
+                            .text_click {
+                                border: $border;
+                                color: $black;
+                                span {
+                                    border: $border;
+                                }
+                                .ruku_no {
+                                    border: $border;
+                                    font-family: $bn;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    color: #0066ff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // translation_area end
+            // sura_area start
+            .sura_area {
+                border: $border;
+                flex: 1;
+                justify-content: end;
+                display: flex;
+                text-align: right;
+                margin-left: 50px;
+
+                ul {
+                    border: $border;
+                    line-height: 50px;
+                    li {
+                        border: $border;
+                        position: relative;
+
+                        .sura_text {
+                            border: $border;
+                            font-family: $ar;
+                            font-weight: 400;
+                            font-size: 24px;
+                            color: $black;
+                            padding-right: 35px;
+                            &::after {
+                                content: "";
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 2px;
+                                background-color: $black;
+                                position: absolute;
+                                top: 16px;
+                                right: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+            // sura_area end
+        }
+        // sura_and_translation area end
+    }
+}
+// sura_translation_and_ayet_area end
+
+// sura_history_area start
+.sura_history_area {
+    border: $border;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    .sura_history_area_content {
+        border: $border;
+        gap: 20px;
+        display: grid;
+        // sura_history start
+        .sura_history {
+            border: $border;
+            background-color: $off_white;
+            padding: 15px 20px;
+            border-radius: 18px;
+            .history_title {
+                border: $border;
+                margin-bottom: 5px;
+                .title_text {
+                    border: $border;
+                    font-family: $bn;
+                    font-weight: 400;
+                    font-size: 24px;
+                    color: $dark_green;
+                }
+            }
+            .history_description {
+                border: $border;
+                .description_text {
+                    border: $border;
+                    font-family: $bn;
+                    font-weight: 400;
+                    font-size: 24px;
+                    color: $black;
+                }
+            }
+        }
+        // sura_history end
+    }
+}
+// sura_history_area end

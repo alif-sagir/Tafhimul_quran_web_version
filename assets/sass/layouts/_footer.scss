@@ -1,0 +1,115 @@
+// footer_area start
+.footer_area {
+    border: $border;
+    background-color: $dark_green;
+    padding: 80px 0px;
+
+    .footer_area_content {
+        border: $border;
+        ul {
+            border: $border;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                border: $border;
+                .footer_content_title {
+                    border: $border;
+                    margin-bottom: 15px;
+
+                    .footer_content_title_text {
+                        border: $border;
+                        font-family: $Noto-Bold;
+                        font-size: 20px;
+                        color: $white;
+                    }
+                }
+                .footer_content_area {
+                    border: $border;
+                    line-height: 40px;
+
+                    .footer_content {
+                        border: $border;
+                        font-family: $Noto-Bold;
+                        font-size: 20px;
+                        color: $white;
+                        .content_title {
+                            border: $border;
+                        }
+                        .content {
+                            border: $border;
+                            font-family: $Noto-Bold;
+                            font-size: 20px;
+                            color: $white;
+                            transition-duration: 0.4s;
+                            &:hover {
+                                color: $brand_color;
+                            }
+                        }
+                    }
+                }
+
+                .footer_social_media {
+                    border: $border;
+                    .footer_social_media_area {
+                        border: $border;
+                        display: flex;
+                        justify-content: center;
+                        gap: 20px;
+
+                        .social_media {
+                            border: $border;
+                            .social_media_icon {
+                                border: $border;
+                                &:hover i {
+                                    color: $brand_color;
+                                }
+                                i {
+                                    font-size: 20px;
+                                    color: $white;
+                                    transition-duration: 0.4s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright_area {
+    border: $border;
+    background-color: $brand_color;
+    .copyright_area_content {
+        border: $border;
+        justify-content: center;
+        display: flex;
+        padding: 10px 0px;
+
+        // text-align: center;
+        .copyright_text {
+            border: $border;
+            font-family: $Noto-Bold;
+            font-size: 20px;
+            color: $white;
+            align-items: center;
+            display: flex;
+            .copyright_icon {
+                border: $border;
+                color: $black;
+                margin: 0px 5px;
+
+            }
+            .copyright_click {
+                border: $border;
+                color: $white;
+                transition-duration: .4s;
+                &:hover{
+                    color: $dark_green;
+                }
+            }
+        }
+    }
+}
+// footer_area end

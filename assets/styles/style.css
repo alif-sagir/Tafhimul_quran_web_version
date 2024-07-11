@@ -1,0 +1,858 @@
+/* color veriable */
+/* dark_mode_color */
+/* font name */
+/* 400 */
+/* 500 */
+/* 600 */
+/* 700 */
+/* 800 */
+/* border */
+/* responsive_desine_mixin start*/
+/* responsive_desine_mixin end*/
+@font-face {
+  font-family: "Noto-Thin";
+  src: url("../fonts/Noto_Serif_Bengali/static/NotoSerifBengali-Thin.ttf");
+}
+@font-face {
+  font-family: "Noto-ExtraLight";
+  src: url("../fonts/Noto_Serif_Bengali/static/NotoSerifBengali-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Noto-Light";
+  src: url("../fonts/Noto_Serif_Bengali/static/NotoSerifBengali-Light.ttf");
+}
+@font-face {
+  font-family: "Noto-Regular";
+  src: url("../fonts/Noto_Serif_Bengali/static/NotoSerifBengali-Regular.ttf");
+}
+@font-face {
+  font-family: "Noto-Medium";
+  src: url("../fonts/Noto_Serif_Bengali/static/NotoSerifBengali-Medium.ttf");
+}
+@font-face {
+  font-family: "Noto-SemiBold";
+  src: url("../fonts/Noto_Serif_Bengali/static/NotoSerifBengali-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Noto-Bold";
+  src: url("../fonts/Noto_Serif_Bengali/static/NotoSerifBengali-Bold.ttf");
+}
+@font-face {
+  font-family: "Noto-ExtraBold";
+  src: url("../fonts/Noto_Serif_Bengali/static/NotoSerifBengali-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Noto-Black";
+  src: url("../fonts/Noto_Serif_Bengali/static/NotoSerifBengali-Black.ttf");
+}
+@font-face {
+  font-family: "bangla-font";
+  src: url("../fonts/bangla_font/TiroBangla-Regular.ttf");
+}
+@font-face {
+  font-family: "arabic";
+  src: url("../fonts/bangla_font/TiroBangla-Regular.ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img,
+iframe,
+a,
+span,
+i {
+  text-decoration: none;
+  display: inline-block;
+}
+
+html {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  overflow-x: hidden;
+}
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+@media screen and (max-width: 575.9px) {
+  html ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+html ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(185, 185, 185);
+  border-radius: 0px;
+}
+html ::-webkit-scrollbar-thumb {
+  background: #2AB080;
+  border-radius: 0px;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+.content_area_title {
+  border: 0px solid red;
+  text-align: center;
+  margin: 50px 0px;
+}
+.content_area_title .title_text {
+  border: 0px solid red;
+  font-family: "Noto-Bold";
+  font-size: 40px;
+  color: #000000;
+}
+
+.sura_name_area {
+  border: 0px solid red;
+  padding: 50px 0px;
+}
+.sura_name_area .sura_name_area_content {
+  border: 0px solid red;
+  text-align: center;
+  justify-content: center;
+  display: grid;
+}
+.sura_name_area .sura_name_area_content .sura_name {
+  border: 0px solid red;
+  padding-bottom: 15px;
+}
+.sura_name_area .sura_name_area_content .sura_name .sura_name_title {
+  border: 0px solid red;
+  font-size: 36px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "bangla-font";
+}
+.sura_name_area .sura_name_area_content .sura_name .sura_name_title .title_text {
+  border: 0px solid red;
+}
+.sura_name_area .sura_name_area_content .sura_type_ayet_ruku_area {
+  border: 0px solid red;
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+}
+.sura_name_area .sura_name_area_content .sura_type_ayet_ruku_area .type_ayet_ruku_text {
+  border: 0px solid red;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "bangla-font";
+  position: relative;
+}
+.sura_name_area .sura_name_area_content .sura_type_ayet_ruku_area .type_ayet_ruku_text::after {
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #000000;
+  position: absolute;
+  margin: 0px 10px;
+  margin-top: 0px;
+  top: 0px;
+}
+.sura_name_area .sura_name_area_content .sura_type_ayet_ruku_area .type_ayet_ruku_text:last-child .sura_name_area .sura_name_area_content .sura_type_ayet_ruku_area .type_ayet_ruku_text::after {
+  width: 0px;
+}
+.sura_name_area .sura_name_area_content .sura_type_ayet_ruku_area .type_ayet_ruku_text .text {
+  border: 0px solid red;
+}
+
+.sura_and_translation_area {
+  border: 0px solid red;
+}
+.sura_and_translation_area .sura_and_translation_area_content {
+  border: 0px solid red;
+  border-radius: 10px;
+  background-color: #D9D9D9;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu {
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #0B6852;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .translation_and_ayet-title {
+  border: 0px solid red;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .translation_and_ayet-title .text {
+  border: 0px solid red;
+  font-family: "bangla-font";
+  font-size: 24px;
+  font-weight: 400px;
+  color: #ffffff;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu ul {
+  border: 0px solid red;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu ul li {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu ul li a {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+  width: 28px;
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #D9D9D9;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu ul li a img {
+  border: 0px solid red;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu ul li a .grip-lines-vertical {
+  border: 0px solid red;
+  width: 3px;
+  height: 13px;
+  background-color: #000000;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu ul li a .grip-lines-vertical_2 {
+  background-color: #2AB080;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu ul li a .grip-lines {
+  border: 0px solid red;
+  width: 14px;
+  height: 3px;
+  background-color: #000000;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu ul li a .grip-lines_2 {
+  background-color: #2AB080;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu ul li .grip-lines-vertical_a {
+  display: inline-flex;
+  gap: 2px;
+}
+.sura_and_translation_area .sura_and_translation_area_content .translation-title_ayet-title_and_site-menu .site-menu ul li .grip-lines_a {
+  gap: 2px;
+  display: inline-grid;
+  padding: 9px;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation {
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .translation_area {
+  border: 0px solid red;
+  flex: 1;
+  margin-right: 50px;
+  position: relative;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .translation_area ul {
+  border: 0px solid red;
+  line-height: 50px;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .translation_area ul::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  top: 0px;
+  right: -51px;
+  border-radius: 5px;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .translation_area ul li {
+  border: 0px solid red;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .translation_area ul li .translation_text {
+  border: 0px solid red;
+  font-family: "bangla-font";
+  font-weight: 400;
+  font-size: 24px;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .translation_area ul li .translation_text .text_click {
+  border: 0px solid red;
+  color: #000000;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .translation_area ul li .translation_text .text_click span {
+  border: 0px solid red;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .translation_area ul li .translation_text .text_click .ruku_no {
+  border: 0px solid red;
+  font-family: "bangla-font";
+  font-size: 16px;
+  font-weight: 400;
+  color: #0066ff;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .sura_area {
+  border: 0px solid red;
+  flex: 1;
+  justify-content: end;
+  display: flex;
+  text-align: right;
+  margin-left: 50px;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .sura_area ul {
+  border: 0px solid red;
+  line-height: 50px;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .sura_area ul li {
+  border: 0px solid red;
+  position: relative;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .sura_area ul li .sura_text {
+  border: 0px solid red;
+  font-family: "arabic";
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  padding-right: 35px;
+}
+.sura_and_translation_area .sura_and_translation_area_content .sura_and_translation .sura_area ul li .sura_text::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: #000000;
+  position: absolute;
+  top: 16px;
+  right: 0px;
+}
+
+.sura_history_area {
+  border: 0px solid red;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.sura_history_area .sura_history_area_content {
+  border: 0px solid red;
+  gap: 20px;
+  display: grid;
+}
+.sura_history_area .sura_history_area_content .sura_history {
+  border: 0px solid red;
+  background-color: #D9D9D9;
+  padding: 15px 20px;
+  border-radius: 18px;
+}
+.sura_history_area .sura_history_area_content .sura_history .history_title {
+  border: 0px solid red;
+  margin-bottom: 5px;
+}
+.sura_history_area .sura_history_area_content .sura_history .history_title .title_text {
+  border: 0px solid red;
+  font-family: "bangla-font";
+  font-weight: 400;
+  font-size: 24px;
+  color: #0B6852;
+}
+.sura_history_area .sura_history_area_content .sura_history .history_description {
+  border: 0px solid red;
+}
+.sura_history_area .sura_history_area_content .sura_history .history_description .description_text {
+  border: 0px solid red;
+  font-family: "bangla-font";
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+
+.navigation_area {
+  border: 0px solid red;
+  background-color: #2AB080;
+  padding: 0px 30px;
+}
+.navigation_area .navigation_area_content {
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation_area .navigation_area_content .nav_logo_area {
+  border: 0px solid red;
+  width: 204px;
+  align-items: center;
+  display: flex;
+}
+.navigation_area .navigation_area_content .nav_logo_area img {
+  border: 0px solid red;
+  width: 100%;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area {
+  border: 0px solid red;
+  display: flex;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul {
+  border: 0px solid red;
+  display: flex;
+  align-items: center;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .menu {
+  border: 0px solid red;
+  font-family: "Noto-Bold";
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  color: #ffffff;
+  transition-duration: 0.4s;
+  padding: 22px 15px;
+  position: relative;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .menu:hover {
+  background-color: #0B6852;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .menu:hover .form_area {
+  top: 74px;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .menu .menu_icon {
+  border: 0px solid red;
+  margin-bottom: 10px;
+  margin-left: 6px;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .menu .menu_icon i {
+  align-items: center;
+  display: flex;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .form_area {
+  border: 0px solid red;
+  width: 246px;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  position: absolute;
+  top: -500px;
+  left: 0px;
+  transition-duration: 0.4s;
+  transition-delay: 0.2s;
+  box-shadow: 0px 1px 3px #b3b3b3;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .form_area form {
+  border: 0px solid red;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .form_area form .form_input_area {
+  border: 0px solid red;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .form_area form .form_input_area .form_input {
+  border: 0px solid red;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .form_area form .form_input_area .form_input label {
+  border: 0px solid red;
+  font-family: "Noto-Bold";
+  font-size: 12px;
+  color: #0B6852;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .form_area form .form_input_area .form_input input {
+  border: 0px solid red;
+  font-family: "Noto-Bold";
+  font-size: 12px;
+  color: #0B6852;
+  outline: 0;
+  border: 1px solid #0B6852;
+  border-radius: 3px;
+  width: 100%;
+  box-shadow: 0px 2px 3px #a2a2a2;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .form_area form .submit_button_area {
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .form_area form .submit_button_area .button {
+  border: 0px solid red;
+  font-family: "Noto-Bold";
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #2AB080;
+  padding: 4px 12px;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .nav_menu_area ul li .form_area form .submit_button_area .button:hover {
+  background-color: #0B6852;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .social_media_area {
+  border: 0px solid red;
+  margin-left: 15px;
+  align-items: center;
+  display: flex;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .social_media_area ul {
+  border: 0px solid red;
+  display: flex;
+  gap: 15px;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .social_media_area ul li {
+  border: 0px solid red;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .social_media_area ul li .social_media_icon {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+  width: 34px;
+  height: 34px;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  transition-duration: 0.4s;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .social_media_area ul li .social_media_icon:hover {
+  background-color: #0B6852;
+}
+.navigation_area .navigation_area_content .nav_menu_and_social_media_area .social_media_area ul li .social_media_icon i {
+  border: 0px solid red;
+  color: #ffffff;
+  font-size: 20px;
+}
+.navigation_area .navigation_area_content .menu_bar_area {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+}
+.navigation_area .navigation_area_content .menu_bar_area .menu_bar_icon {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+}
+.navigation_area .navigation_area_content .menu_bar_area .menu_bar_icon:hover i {
+  color: #0B6852;
+}
+.navigation_area .navigation_area_content .menu_bar_area .menu_bar_icon i {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+  font-size: 34px;
+  color: #ffffff;
+  transition-duration: 0.4s;
+}
+
+.banner_area {
+  border: 0px solid red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 230px;
+  margin-bottom: 50px;
+}
+.banner_area .banner_area_contain {
+  border: 0px solid red;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 230px;
+}
+
+.search_area {
+  border: 0px solid red;
+}
+.search_area .search_area_content {
+  border: 0px solid red;
+  justify-content: center;
+  display: flex;
+}
+.search_area .search_area_content .form_area {
+  border: 0px solid red;
+  display: flex;
+  width: 524px;
+  background-color: #D9D9D9;
+  padding: 2px 15px;
+  border-radius: 26px;
+}
+.search_area .search_area_content .form_area .drop_down_area {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+}
+.search_area .search_area_content .form_area .drop_down_area .drop_down_botton {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+  background-color: transparent;
+  padding: 0px;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+}
+.search_area .search_area_content .form_area .drop_down_area .drop_down_botton i {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+  font-size: 21px;
+  color: #575757;
+}
+.search_area .search_area_content .form_area .search_title_and_search_icon_area {
+  border: 0px solid red;
+  margin-left: 10px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.search_area .search_area_content .form_area .search_title_and_search_icon_area .input_area {
+  border: 0px solid red;
+  background-color: transparent;
+  outline: 0;
+  font-family: "bangla-font";
+  font-size: 20px;
+  color: #000000;
+  flex: 1;
+  margin-right: 10px;
+}
+.search_area .search_area_content .form_area .search_title_and_search_icon_area .seaech_icon {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+}
+.search_area .search_area_content .form_area .search_title_and_search_icon_area .seaech_icon i {
+  border: 0px solid red;
+  font-size: 20px;
+  color: #000000;
+}
+
+.table_of_contents_area {
+  border: 0px solid red;
+  margin-bottom: 100px;
+}
+.table_of_contents_area .table_of_contents_area_content {
+  border: 0px solid red;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents {
+  border: 0px solid red;
+  justify-content: center;
+  display: flex;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content {
+  border: 0px solid red;
+  width: 775px;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul {
+  border: 0px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li {
+  border: 0px solid red;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item {
+  border: 0px solid red;
+  width: 380px;
+  background-color: #2AB080;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item:hover {
+  background-color: #0B6852;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area {
+  border: 0px solid red;
+  display: flex;
+  align-items: center;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .item_name {
+  border: 0px solid red;
+  flex: 1;
+  margin-left: 20px;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .item_name .introduction_title {
+  padding: 17px 0px;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .item_name .item_name_title {
+  border: 0px solid red;
+  font-family: "bangla-font";
+  font-size: 24px;
+  font-weight: 400px;
+  color: #ffffff;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .place_and_ayet_area {
+  border: 0px solid red;
+  width: 110px;
+  background-color: #0B6852;
+  padding: 15px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .place_and_ayet_area .place_and_ayet_area_content {
+  border: 0px solid red;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .place_and_ayet_area .place_and_ayet_area_content .place {
+  border: 0px solid red;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .place_and_ayet_area .place_and_ayet_area_content .place .place_title_and_place {
+  border: 0px solid red;
+  font-family: "bangla-font";
+  font-size: 14px;
+  font-weight: 400px;
+  color: #ffffff;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .place_and_ayet_area .place_and_ayet_area_content .place .place_title_and_place .place_title {
+  border: 0px solid red;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .place_and_ayet_area .place_and_ayet_area_content .place .place_title_and_place .place {
+  border: 0px solid red;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .place_and_ayet_area .place_and_ayet_area_content .ayet_area {
+  border: 0px solid red;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .place_and_ayet_area .place_and_ayet_area_content .ayet_area .ayet_title_and_number_area {
+  border: 0px solid red;
+  font-family: "bangla-font";
+  font-size: 14px;
+  font-weight: 400px;
+  color: #ffffff;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .place_and_ayet_area .place_and_ayet_area_content .ayet_area .ayet_title_and_number_area .ayet_title {
+  border: 0px solid red;
+}
+.table_of_contents_area .table_of_contents_area_content .table_of_contents .table_content ul li .item .item_area .place_and_ayet_area .place_and_ayet_area_content .ayet_area .ayet_title_and_number_area .ayet_number {
+  border: 0px solid red;
+}
+
+.footer_area {
+  border: 0px solid red;
+  background-color: #0B6852;
+  padding: 80px 0px;
+}
+.footer_area .footer_area_content {
+  border: 0px solid red;
+}
+.footer_area .footer_area_content ul {
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_area .footer_area_content ul li {
+  border: 0px solid red;
+}
+.footer_area .footer_area_content ul li .footer_content_title {
+  border: 0px solid red;
+  margin-bottom: 15px;
+}
+.footer_area .footer_area_content ul li .footer_content_title .footer_content_title_text {
+  border: 0px solid red;
+  font-family: "Noto-Bold";
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer_area .footer_area_content ul li .footer_content_area {
+  border: 0px solid red;
+  line-height: 40px;
+}
+.footer_area .footer_area_content ul li .footer_content_area .footer_content {
+  border: 0px solid red;
+  font-family: "Noto-Bold";
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer_area .footer_area_content ul li .footer_content_area .footer_content .content_title {
+  border: 0px solid red;
+}
+.footer_area .footer_area_content ul li .footer_content_area .footer_content .content {
+  border: 0px solid red;
+  font-family: "Noto-Bold";
+  font-size: 20px;
+  color: #ffffff;
+  transition-duration: 0.4s;
+}
+.footer_area .footer_area_content ul li .footer_content_area .footer_content .content:hover {
+  color: #2AB080;
+}
+.footer_area .footer_area_content ul li .footer_social_media {
+  border: 0px solid red;
+}
+.footer_area .footer_area_content ul li .footer_social_media .footer_social_media_area {
+  border: 0px solid red;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer_area .footer_area_content ul li .footer_social_media .footer_social_media_area .social_media {
+  border: 0px solid red;
+}
+.footer_area .footer_area_content ul li .footer_social_media .footer_social_media_area .social_media .social_media_icon {
+  border: 0px solid red;
+}
+.footer_area .footer_area_content ul li .footer_social_media .footer_social_media_area .social_media .social_media_icon:hover i {
+  color: #2AB080;
+}
+.footer_area .footer_area_content ul li .footer_social_media .footer_social_media_area .social_media .social_media_icon i {
+  font-size: 20px;
+  color: #ffffff;
+  transition-duration: 0.4s;
+}
+
+.copyright_area {
+  border: 0px solid red;
+  background-color: #2AB080;
+}
+.copyright_area .copyright_area_content {
+  border: 0px solid red;
+  justify-content: center;
+  display: flex;
+  padding: 10px 0px;
+}
+.copyright_area .copyright_area_content .copyright_text {
+  border: 0px solid red;
+  font-family: "Noto-Bold";
+  font-size: 20px;
+  color: #ffffff;
+  align-items: center;
+  display: flex;
+}
+.copyright_area .copyright_area_content .copyright_text .copyright_icon {
+  border: 0px solid red;
+  color: #000000;
+  margin: 0px 5px;
+}
+.copyright_area .copyright_area_content .copyright_text .copyright_click {
+  border: 0px solid red;
+  color: #ffffff;
+  transition-duration: 0.4s;
+}
+.copyright_area .copyright_area_content .copyright_text .copyright_click:hover {
+  color: #0B6852;
+}
+
+/*# sourceMappingURL=style.css.map */
